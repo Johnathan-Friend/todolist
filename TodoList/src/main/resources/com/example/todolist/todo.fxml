@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1004.0" style="-fx-background-color: #D3EBDC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todolist.todoController">
+   <children>
+      <ListView fx:id="listList" layoutX="31.0" layoutY="61.0" prefHeight="546.0" prefWidth="225.0" />
+      <ListView fx:id="taskList" layoutX="274.0" layoutY="61.0" prefHeight="314.0" prefWidth="699.0" />
+      <Label fx:id="listNameLabel" layoutX="619.0" layoutY="24.0" text="List:" />
+      <Button fx:id="menuButton" layoutX="31.0" layoutY="20.0" mnemonicParsing="false" onAction="#toMenu" text="Menu" />
+      <Button fx:id="deleteListButton" layoutX="204.0" layoutY="20.0" mnemonicParsing="false" onAction="#deleteList" text="Delete" />
+      <Button fx:id="newTaskButton" layoutX="908.0" layoutY="641.0" mnemonicParsing="false" onAction="#createNewTask" text="New Task" />
+      <TextField fx:id="taskPrompt" layoutX="274.0" layoutY="641.0" prefHeight="25.0" prefWidth="440.0" promptText="Task" />
+      <ListView fx:id="completedTaskList" layoutX="274.0" layoutY="415.0" prefHeight="192.0" prefWidth="699.0" />
+      <DatePicker fx:id="dateToCompletePrompt" layoutX="722.0" layoutY="641.0" promptText="Date To Complete" />
+      <Button fx:id="newListButton" layoutX="193.0" layoutY="641.0" mnemonicParsing="false" onAction="#createNewList" text="New List" />
+      <TextField fx:id="listNamePrompt" layoutX="31.0" layoutY="641.0" promptText="List Name" />
+      <Button fx:id="deleteTaskButton" layoutX="896.0" layoutY="20.0" mnemonicParsing="false" onAction="#deleteTask" text="Delete Task" />
+      <Button fx:id="completeTaskButton" layoutX="791.0" layoutY="20.0" mnemonicParsing="false" onAction="#completeTask" text="Complete Task" />
+      <Label layoutX="588.0" layoutY="385.0" text="Completed List:" />
+      <Label fx:id="taskErrorLabel" layoutX="274.0" layoutY="615.0" prefHeight="17.0" prefWidth="440.0" textFill="RED" />
+      <Label fx:id="listErrorLabel" layoutX="31.0" layoutY="615.0" prefHeight="17.0" prefWidth="225.0" textFill="RED" />
+   </children>
+</Pane>
